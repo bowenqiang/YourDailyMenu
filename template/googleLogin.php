@@ -6,6 +6,7 @@ require_once ('libraries/Google/autoload.php');
 $client_id = '602600021763-38hed79m2caovvdu6b0g7p2u9mjdq6fj.apps.googleusercontent.com'; 
 $client_secret = 'izMrcZhumTSVn66CEg_3wtr6';
 $redirect_uri = 'https://menu.coreterminal.com/login.php';
+//$redirect_uri = 'menu.local/login.php';
 
 /************************************************
   Make an API request on behalf of a user. In

@@ -14,7 +14,13 @@ if (isset($authUrl)){
 	echo '</div>';
 	
 } else {
-	
+	    $_SESSION['firstName'] = $user->givenName;
+	    $_SESSION['lastName'] = $user->familyName;
+	    $_SESSION['userID'] = $user->id;
+	    $_SESSION['imgURL'] = $user->picture;
+	    $_SESSION['email'] = $user->email;
+	    header("Location: index.php");
+	/*
 	$user = $service->userinfo->get(); //get user info 	
 	//show user picture
 	echo '<img src="'.$user->picture.'" style="float: right;margin-top: 33px;" />';
@@ -22,6 +28,8 @@ if (isset($authUrl)){
 	echo '<pre>';
 	print_r($user);
 	echo '</pre>';
+	*/
+
 }
 echo '</div>';
 
