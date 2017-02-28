@@ -31,7 +31,7 @@
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="logout.php">Logout</a></li>
               </ul>
             </li>
               <?php }
