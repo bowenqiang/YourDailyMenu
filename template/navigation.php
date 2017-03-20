@@ -13,6 +13,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
+			<li><a href="weeklymenu.php">Weekly Menu</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
 
@@ -23,7 +24,10 @@
               if(isset($_SESSION['access_token'])) {           	
               	?>
              <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="$userImage" aria-label="profile picutre"> <span class="caret"></span></a>
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 6px;padding-bottom: 2px;" role="button" aria-haspopup="true" aria-expanded="false" >
+         <img id="id_p" class="img-circle" width="42px" height="40px" src="$imgURL" title="$firstName" aria-label="Profile Picture">
+        $firstName
+      <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
